@@ -15,7 +15,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"fabric-datagen": [
-			"com.mod.melting.ModDataGenerator"
+          "com.mod.melting.datagen.ModDataGenerator"
 		],
 		"client": [
 			"com.mod.melting.StoneSmeltingClient"
