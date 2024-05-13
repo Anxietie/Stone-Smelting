@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "melting",
+	"version": "${version}",
+	"name": "Stone Smelting",
+	"description": "Furnace variant that smelts stones",
+	"authors": [
+		"Anxietie"
+	],
+	"contact": {
+		"repo": "https://github.com/anxietie/stone-smelting"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/melting/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [
+			"com.mod.melting.ModDataGenerator"
+		],
+		"client": [
+			"com.mod.melting.StoneSmeltingClient"
+		],
+		"main": [
+			"com.mod.melting.StoneSmelting"
+		],
+		"mm:early_risers": [
+			"com.mod.melting.EarlyRiser"
+		]
+	},
+	"mixins": [
+		"melting.mixins.json",
+		{
+			"config": "melting.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric": "*",
+		"minecraft": "${minecraft_version}",
+		"java": ">=17"
+	}
+}
