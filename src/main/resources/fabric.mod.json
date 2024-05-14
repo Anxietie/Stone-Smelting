@@ -8,7 +8,9 @@
 		"Anxietie"
 	],
 	"contact": {
-		"repo": "https://github.com/anxietie/stone-smelting"
+		"homepage": "https://modrinth.com/mod/stone-smelting",
+		"sources": "https://github.com/anxietie/Stone-Smelting.git",
+		"issues": "https://github.com/anxietie/Stone-Smelting/issues"
 	},
 	"license": "GPL-3.0",
 	"icon": "assets/melting/icon.png",
@@ -37,7 +39,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=${loader_version}",
-		"fabric": "*",
+		"fabric-api": ">=${fabric_version}",
 		"minecraft": "${minecraft_version}",
 		"java": ">=17"
 	}

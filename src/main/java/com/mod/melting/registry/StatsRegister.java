@@ -12,7 +12,7 @@ public class StatsRegister {
 	public static final Identifier INTERACT_WITH_MELTER = new Identifier(MODID, "interact_with_melter");
 
 	public static void registerStats() {
-		register(INTERACT_WITH_MELTER);
+		// register(INTERACT_WITH_MELTER);
 	}
 
 	private static Identifier register(Identifier id) {
