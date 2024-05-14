@@ -10,9 +10,7 @@ import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
-import net.minecraft.recipe.RecipeManager;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -21,8 +19,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Collection;
 
 public class MelterBlock extends AbstractFurnaceBlock {
 	public MelterBlock(AbstractBlock.Settings settings) { super(settings); }
@@ -50,7 +46,7 @@ public class MelterBlock extends AbstractFurnaceBlock {
 
 	@Override
 	public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-		if (!state.get(LIT).booleanValue()) return;
+		if (!state.get(LIT)) return;
 
 		double d = (double)pos.getX() + 0.5;
 		double e = pos.getY();

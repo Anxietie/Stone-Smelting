@@ -1,4 +1,5 @@
 {
 	"container.melter": "Melter",
-	"gui.recipebook.toggleRecipes.meltable": "Showing Meltable"
+	"gui.recipebook.toggleRecipes.meltable": "Showing Meltable",
+	"block.melting.melter": "Melter"
 }

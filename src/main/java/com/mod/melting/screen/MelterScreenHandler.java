@@ -11,10 +11,10 @@ import net.minecraft.screen.PropertyDelegate;
 
 public class MelterScreenHandler extends AbstractFurnaceScreenHandler {
 	public MelterScreenHandler(int syncId, PlayerInventory playerInventory) {
-		super(ScreenHandlerTypeRegister.MELTER, RecipeTypeRegister.MELTING, ClassTinkerers.getEnum(RecipeBookCategory.class, "MELTING"), syncId, playerInventory);
+		super(ScreenHandlerTypeRegister.MELTER, RecipeTypeRegister.MELTING, ClassTinkerers.getEnum(RecipeBookCategory.class, "MELTER"), syncId, playerInventory);
 	}
 
 	public MelterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate propertyDelegate) {
-		super(ScreenHandlerTypeRegister.MELTER, RecipeTypeRegister.MELTING, ClassTinkerers.getEnum(RecipeBookCategory.class, "MELTING"), syncId, playerInventory, inventory, propertyDelegate);
+		super(ScreenHandlerTypeRegister.MELTER, RecipeTypeRegister.MELTING, ClassTinkerers.getEnum(RecipeBookCategory.class, "MELTER"), syncId, playerInventory, inventory, propertyDelegate);
 	}
 }

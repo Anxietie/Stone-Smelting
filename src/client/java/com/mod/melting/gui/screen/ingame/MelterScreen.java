@@ -9,11 +9,9 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import static com.mod.melting.StoneSmelting.MODID;
-
 @Environment(EnvType.CLIENT)
 public class MelterScreen extends AbstractFurnaceScreen<MelterScreenHandler> {
-	private static final Identifier TEXTURE = new Identifier(MODID, "textures/gui/container/furnace.png");
+	private static final Identifier TEXTURE = new Identifier("textures/gui/container/furnace.png");
 
 	public MelterScreen(MelterScreenHandler container, PlayerInventory inventory, Text title) {
 		super(container, new MelterRecipeBookScreen(), inventory, title, TEXTURE);

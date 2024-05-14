@@ -7,13 +7,9 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.recipe.RecipeManager;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.BlockPos;
-
-import java.util.Collection;
-import java.util.Collections;
 
 public class MelterBlockEntity extends AbstractFurnaceBlockEntity {
 	public MelterBlockEntity(BlockPos pos, BlockState state) {

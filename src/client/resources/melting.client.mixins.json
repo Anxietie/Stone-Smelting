@@ -1,10 +1,11 @@
 {
-  "required": true,
-  "package": "com.mod.melting.mixin.client",
-  "client": [
-
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+	"required": true,
+	"package": "com.mod.melting.mixin.client",
+	"client": [
+		"ClientRecipeBookMixin",
+		"RecipeBookGroupMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
 }
