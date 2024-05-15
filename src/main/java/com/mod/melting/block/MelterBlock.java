@@ -2,7 +2,7 @@ package com.mod.melting.block;
 
 import com.mod.melting.block.entity.MelterBlockEntity;
 import com.mod.melting.registry.BlockEntityRegister;
-import com.mod.melting.registry.StatsRegister;
+import com.mod.melting.stats.ModStats;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.BlockState;
@@ -28,7 +28,7 @@ public class MelterBlock extends AbstractFurnaceBlock {
 		BlockEntity blockEntity = world.getBlockEntity(pos);
 		if (blockEntity instanceof MelterBlockEntity) {
 			player.openHandledScreen((NamedScreenHandlerFactory) blockEntity);
-			player.incrementStat(StatsRegister.INTERACT_WITH_MELTER);
+			player.incrementStat(ModStats.INTERACT_WITH_MELTER);
 		}
 	}
 

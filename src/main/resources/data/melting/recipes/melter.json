@@ -10,12 +10,15 @@
 		},
 		"%": {
 			"item": "minecraft:crying_obsidian"
+		},
+		"&": {
+			"item": "minecraft:lava_bucket"
 		}
 	},
 	"pattern": [
 		"###",
 		"#@#",
-		"%%%"
+		"%&%"
 	],
 	"result": {
 		"item": "melting:melter"

@@ -22,8 +22,5 @@ public class StoneSmelting implements ModInitializer {
 
 		ScreenHandlerTypeRegister.registerScreenHandlerTypes();
 		LOGGER.info("screen handler types registered");
-
-		StatsRegister.registerStats();
-		LOGGER.info("stats registered");
 	}
 }
